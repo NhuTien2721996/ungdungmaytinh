@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<form>
+    Caculator
+    <br>
+    <input id="số thứ nhất" type="text">
+    <input id="số thứ hai" type="text">
+    <input id="kết quả" type="text">
+    <br>
+    <br>
+    <button type="button" onclick="add()">Addition(+)</button>
+    <button type="button" onclick="sub()">Subtraction(-)</button>
+    <button type="button" onclick="mul()">Multiplacation(X)</button>
+    <button type="button" onclick="div()">Division(/)</button>
+</form>
+<script>
+    function add() {
+        let a, b;
+        a = parseFloat(document.getElementById("số thứ nhất").value);
+        b = parseFloat(document.getElementById("số thứ hai").value);
+        c = a + b;
+        document.getElementById("kết quả").value = c;
+    }
+        function sub() {
+            let a,b;
+            a=parseFloat(document.getElementById("số thứ nhất").value);
+            b=parseFloat(document.getElementById("số thứ hai").value);
+            c=a-b;
+            document.getElementById("kết quả").value=c;
+
+    }
+    function mul() {
+        let a,b;
+        a=parseFloat(document.getElementById("số thứ nhất").value);
+        b=parseFloat(document.getElementById("số thứ hai").value);
+        c=a*b;
+        document.getElementById("kết quả").value=c;
+
+    }
+    function div() {
+        let a,b;
+        a=parseFloat(document.getElementById("số thứ nhất").value);
+        b=parseFloat(document.getElementById("số thứ hai").value);
+        c=a/b;
+        document.getElementById("kết quả").value=c;
+
+    }
+</script>
+</body>
+</html>
